@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JerryOS ERP Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="brand-panel">
+        <div class="brand-header">
+          <div class="brand-mark">J</div>
+          <div class="brand-copy">
+            <span>ERP</span>
+            <strong>JerryOS</strong>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Smart operations, one dashboard</p>
+          <h1>Move faster with an all-in-one business control center.</h1>
+          <p class="subtext">
+            Manage products, sales pipelines, employee operations, and customer relationships from
+            one secure platform.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="value">12.4k</span>
+            <span class="label">Orders tracked</span>
+          </div>
+          <div class="stat-card">
+            <span class="value">94%</span>
+            <span class="label">Retention</span>
+          </div>
+          <div class="stat-card">
+            <span class="value">3.2x</span>
+            <span class="label">Growth</span>
+          </div>
+        </div>
+
+        <ul class="feature-list">
+          <li>
+            <span class="icon">✓</span>
+            Product inventory and pricing control
+          </li>
+          <li>
+            <span class="icon">✓</span>
+            Sales pipeline and forecasting
+          </li>
+          <li>
+            <span class="icon">✓</span>
+            HR onboarding and performance insights
+          </li>
+          <li>
+            <span class="icon">✓</span>
+            Customer 360 and support lifecycle
+          </li>
+        </ul>
+      </aside>
+
+      <main class="auth-panel">
+        <div class="auth-card">
+          <div class="card-header">
+            <p class="welcome-label">Welcome back</p>
+            <h2>Access your ERP workspace</h2>
+          </div>
+
+          <div class="tab-switcher" role="tablist" aria-label="Authentication form switcher">
+            <button class="tab-button active" data-target="login" type="button">Log in</button>
+            <button class="tab-button" data-target="register" type="button">Register</button>
+            <button class="tab-button" data-target="reset" type="button">Reset</button>
+          </div>
+
+          <div class="form-panel active" data-form="login">
+            <form>
+              <div class="field-group">
+                <label for="login-email">Email address</label>
+                <input id="login-email" type="email" placeholder="name@company.com" />
+              </div>
+
+              <div class="field-group">
+                <label for="login-password">Password</label>
+                <div class="password-wrap">
+                  <input id="login-password" type="password" placeholder="Enter your password" />
+                  <button class="toggle-password" type="button" aria-label="Show password">Show</button>
+                </div>
+              </div>
+
+              <div class="options-row">
+                <label class="checkbox-item">
+                  <input type="checkbox" checked />
+                  <span>Remember me</span>
+                </label>
+                <button type="button" class="link-button" data-target="reset">Forgot password?</button>
+              </div>
+
+              <button class="primary-btn" type="submit">Log in to dashboard</button>
+            </form>
+
+            <div class="divider"><span>or continue with</span></div>
+
+            <div class="social-row">
+              <button type="button" class="social-btn">Google</button>
+              <button type="button" class="social-btn">Microsoft</button>
+            </div>
+          </div>
+
+          <div class="form-panel" data-form="register">
+            <form>
+              <div class="field-row two-col">
+                <div class="field-group">
+                  <label for="first-name">First name</label>
+                  <input id="first-name" type="text" placeholder="John" />
+                </div>
+                <div class="field-group">
+                  <label for="last-name">Last name</label>
+                  <input id="last-name" type="text" placeholder="Smith" />
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="company-name">Company</label>
+                <input id="company-name" type="text" placeholder="Jerry Distribution" />
+              </div>
+
+              <div class="field-group">
+                <label for="register-email">Work email</label>
+                <input id="register-email" type="email" placeholder="john@company.com" />
+              </div>
+
+              <div class="field-group">
+                <label for="register-password">Create password</label>
+                <div class="password-wrap">
+                  <input id="register-password" type="password" placeholder="At least 8 characters" />
+                  <button class="toggle-password" type="button" aria-label="Show password">Show</button>
+                </div>
+              </div>
+
+              <label class="checkbox-item terms">
+                <input type="checkbox" checked />
+                <span>I agree to the terms and privacy policy.</span>
+              </label>
+
+              <button class="primary-btn" type="submit">Create account</button>
+            </form>
+          </div>
+
+          <div class="form-panel" data-form="reset">
+            <form>
+              <div class="field-group">
+                <label for="reset-email">Email address</label>
+                <input id="reset-email" type="email" placeholder="name@company.com" />
+              </div>
+
+              <p class="helper-text">
+                Enter your email and we’ll send a secure reset link to recover your account.
+              </p>
+
+              <button class="primary-btn" type="submit">Send reset link</button>
+              <button type="button" class="secondary-btn" data-target="login">Back to sign in</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
